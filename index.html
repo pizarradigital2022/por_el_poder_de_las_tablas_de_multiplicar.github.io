@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡El Poder de las Tablas: Batalla por Eternia!</title>
+    <title>¡Por el poder de las tablas de multiplicar! ¡Yo tengo el poder!</title>
     <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
     <style>
         /* BASE TEMÁTICA MASTERS OF THE UNIVERSE */
@@ -360,7 +360,7 @@
         
         <div class="video-container-caza">
             <div class="video-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G9h_pOtmkEg?si=euzuTRFUM8JOvTLN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G9h_pOtmkEg?si=rHVtwXPjOWLMM18g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
         </div>
         
         <div class="img-repaso-caza">
@@ -368,10 +368,10 @@
         </div>
 
         <div class="instrucciones-caja">
-            <h3 style="margin-top:0; color:#ffcc00; text-shadow:none;">📜 REGLAS DE LACONTIENDA (¡Escucha con atención, guerrero!)</h3>
-            <p style="margin: 5px 0 10px 0; color:#ccc; font-size:14px;">Skeletor intenta descifrar los códigos numéricos ancestrales para entrar al Castillo de Grayskull. ¡Solo la velocidad mental con las tablas de multiplicar salvará el universo!</p>
+            <h3 style="margin-top:0; color:#ffcc00; text-shadow:none;">📜 REGLAS DE LA CONTIENDA</h3>
+            <p style="margin: 5px 0 10px 0; color:#ccc; font-size:14px;">Skeletor intenta descifrar los códigos numéricos ancestrales para entrar al Castillo de Grayskull. ¡Solo la velocidad mental con las tablas del 1 al 10 salvará el universo!</p>
             <ul>
-                <li><strong>1. El Pulsador:</strong> Cuando aparezca el desafío de multiplicación, calculad rápido. El primer equipo en pulsar congelará el reloj. El bando de <strong>He-Man (Izquierda)</strong>strong> usa la tecla <strong>'A'</strong> y el bando de <strong>Skeletor (Derecha)</strong>strong> usa la tecla <strong>'L'</strong>.</li>
+                <li><strong>1. El Pulsador:</strong> Cuando aparezca el desafío de multiplicación, calculad rápido. El primer equipo en pulsar congelará el reloj. El bando de **He-Man (Izquierda)** usa la tecla <strong>'A'</strong> y el bando de **Skeletor (Derecha)** usa la tecla <strong>'L'</strong>.</li>
                 <li><strong>2. Invocación del Poder:</strong> Al pulsar, tendréis <strong>10 segundos</strong> para introducir el producto exacto y confirmar con OK (o pulsar Enter). Acertar otorga <strong>+100 puntos</strong>.</li>
                 <li><strong>3. Contraataque de Eternia (Rebote):</strong> Si falláis o se agota el tiempo, perderéis <strong>50 puntos</strong>. El ataque se volverá inestable y se activará un **REBOTE DE 5 SEGUNDOS** donde el rival podrá pulsar para reclamar los 100 puntos.</li>
                 <li><strong>4. Siguiente Desafío:</strong> Si nadie aprovecha el rebote o el rival también falla, el portal cósmico cambia y se genera una nueva operación.</li>
@@ -389,17 +389,6 @@
                 <input type="text" id="name-fant-input" placeholder="SKELETOR Y SUS SECUACES" maxlength="15">
                 <small style="color: #cc00ff; margin-top:4px;">Pulsador: Tecla <strong>L</strong></small>
             </div>
-        </div>
-
-        <div class="config-group">
-            <div class="config-item">
-                <label>Rango de Poder Dinámico:</label>
-                <select id="game-mode">
-                    <option value="all">Todas las tablas (1 al 12)</option>
-                    <option value="easy">Tablas básicas (1 al 5)</option>
-                    <option value="hard">Tablas avanzadas (6 al 12)</option>
-                </select>
-            </div>
             <div class="config-item">
                 <label>Energía del Portal (Tiempo total):</label>
                 <select id="game-time">
@@ -411,15 +400,12 @@
         </div>
 
         <button onclick="startGame()">⚡ ¡Invocar el Poder de Grayskull! ⚡</button>
-            <hr>
-    <p style="text-align:center; font-size: 12px;">Autor: Joaquín Candañedo.<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./resources/CC_BY_SA.png" alt="Creative Commons Reconocimiento - Compartir Igual"></a></p>
-
     </div>
 
 
     <div id="screen-2" class="screen">
         <div id="central-board">
-            <div id="timer">⏰ TIEMPO COLOZAL: 00:00</div>
+            <div id="timer">⏰ TIEMPO CÓSMICO: 00:00</div>
             <div id="pregunta-texto">Calculando coordenadas de combate...</div>
             <div id="feedback"></div>
         </div>
@@ -429,7 +415,7 @@
                 <h2 id="display-name-caza">HE-MAN</h2>
                 
                 <div class="img-placeholder" >
-                    <img src="./resources/bando_heman.png" id="img-team-caza" alt="Bando He-man" style="color: #555;">
+                    <img src="./resources/bando_heman.png" id="img-team-caza" alt="Bando He-man">
                 </div>
 
                 <h3 style="color:#fff; text-shadow:none;">Puntos: <span id="score-caza" style="color:#00ccff; font-size:24px;">0</span></h3>
@@ -445,7 +431,7 @@
                 <h2 id="display-name-fant">SKELETOR</h2>
                 
                 <div class="img-placeholder" >
-                    <img src="./resources/bando_skeletor.png" id="img-team-fant" alt="Bando Skeletor" style="color: #555;">
+                    <img src="./resources/bando_skeletor.png" id="img-team-fant" alt="Bando Skeletor">
                 </div>
 
                 <h3 style="color:#fff; text-shadow:none;">Puntos: <span id="score-fant" style="color:#cc00ff; font-size:24px;">0</span></h3>
@@ -461,7 +447,7 @@
 
 
     <div id="screen-3" class="screen">
-        <h1>📊 INFORME CRÓNICO DE LA HECHICERA 📊</h1>
+        <h1>📊 INFORME CRÓNICO DE SORCERESS 📊</h1>
         <h2 id="ganador-texto" style="font-size: 34px; margin: 20px 0;"></h2>
         
         <div class="stats-box">
@@ -536,20 +522,11 @@
             }
         });
 
-        // --- ENGRANAJE DE LAS TABLAS DE MULTIPLICAR ---
+        // --- ENGRANAJE DE LAS TABLAS DE MULTIPLICAR (1 AL 10 AMBAS INCLUIDAS) ---
         function generarPregunta() {
-            let modo = document.getElementById('game-mode').value;
-            
-            if (modo === 'easy') {
-                num1 = Math.floor(Math.random() * 5) + 1; // 1 al 5
-                num2 = Math.floor(Math.random() * 9) + 1; // 1 al 9
-            } else if (modo === 'hard') {
-                num1 = Math.floor(Math.random() * 7) + 6; // 6 al 12
-                num2 = Math.floor(Math.random() * 11) + 2; // 2 al 12
-            } else {
-                num1 = Math.floor(Math.random() * 12) + 1; // 1 al 12
-                num2 = Math.floor(Math.random() * 12) + 1; // 1 al 12
-            }
+            // Genera números aleatorios entre 1 y 10 para ambas variables
+            num1 = Math.floor(Math.random() * 10) + 1; 
+            num2 = Math.floor(Math.random() * 10) + 1; 
 
             respuestaCorrecta = num1 * num2;
             statTotales++;
